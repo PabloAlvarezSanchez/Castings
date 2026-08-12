@@ -1,0 +1,201 @@
+/* Hoja de estilos común para las guías de usuario de Previnsa */
+
+@page {
+  size: A4;
+  margin: 18mm 16mm 20mm 16mm;
+}
+
+:root {
+  --azul: #467fcf;
+  --azul-osc: #2f5fa0;
+  --gris-txt: #2c3e50;
+  --gris-claro: #f4f6f9;
+  --gris-borde: #dde3ea;
+  --verde: #33db84;
+  --naranja: #e8830c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", "Open Sans", Arial, sans-serif;
+  color: var(--gris-txt);
+  font-size: 11pt;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ---------- Portada ---------- */
+.portada {
+  height: 247mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  page-break-after: always;
+}
+.portada .logo {
+  width: 220px;
+  margin-bottom: 30px;
+}
+.portada h1 {
+  font-size: 30pt;
+  color: var(--azul-osc);
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+.portada .sub {
+  font-size: 15pt;
+  color: var(--azul);
+  margin-bottom: 40px;
+}
+.portada .pie {
+  position: absolute;
+  bottom: 30mm;
+  font-size: 10pt;
+  color: #8a97a6;
+}
+.portada .etiqueta {
+  display: inline-block;
+  background: var(--azul);
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 11pt;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+/* ---------- Cabecera de página ---------- */
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--azul);
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+.cabecera .titulo {
+  font-size: 13pt;
+  font-weight: 700;
+  color: var(--azul-osc);
+}
+.cabecera img { height: 30px; }
+
+/* ---------- Introducción ---------- */
+.intro {
+  background: var(--gris-claro);
+  border-left: 4px solid var(--azul);
+  padding: 14px 18px;
+  border-radius: 4px;
+  margin-bottom: 22px;
+}
+.intro h2 {
+  margin: 0 0 8px 0;
+  font-size: 13pt;
+  color: var(--azul-osc);
+}
+.intro p { margin: 0; }
+
+/* ---------- Índice ---------- */
+.indice {
+  margin-bottom: 24px;
+}
+.indice h2 {
+  font-size: 13pt;
+  color: var(--azul-osc);
+  border-bottom: 1px solid var(--gris-borde);
+  padding-bottom: 6px;
+}
+.indice ol {
+  margin: 10px 0 0 0;
+  padding-left: 22px;
+}
+.indice li { margin-bottom: 5px; }
+
+/* ---------- Pasos ---------- */
+.paso {
+  page-break-inside: avoid;
+  margin-bottom: 26px;
+}
+.paso .encab {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.paso .num {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  background: var(--azul);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13pt;
+  margin-right: 12px;
+}
+.paso h3 {
+  margin: 0;
+  font-size: 13pt;
+  color: var(--azul-osc);
+}
+.paso p { margin: 0 0 10px 0; }
+.paso .captura {
+  width: 100%;
+  border: 1px solid var(--gris-borde);
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.paso .pie-img {
+  font-size: 9pt;
+  color: #8a97a6;
+  text-align: center;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ---------- Avisos ---------- */
+.nota {
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 12px 0;
+  font-size: 10.5pt;
+}
+.nota.info { background: #eef4fc; border-left: 4px solid var(--azul); }
+.nota.ok   { background: #eafaf1; border-left: 4px solid var(--verde); }
+.nota.warn { background: #fdf4e7; border-left: 4px solid var(--naranja); }
+.nota b { color: var(--azul-osc); }
+
+/* ---------- Leyenda de colores ---------- */
+.leyenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 12px 0;
+}
+.leyenda .item { display: flex; align-items: center; font-size: 10pt; }
+.leyenda .caja {
+  width: 16px; height: 16px;
+  border-radius: 3px;
+  margin-right: 6px;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+/* ---------- Cierre ---------- */
+.cierre {
+  background: var(--azul-osc);
+  color: #fff;
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin-top: 10px;
+  page-break-inside: avoid;
+}
+.cierre h2 { margin: 0 0 10px 0; font-size: 13pt; color: #fff; }
+.cierre ul { margin: 0; padding-left: 20px; }
+.cierre li { margin-bottom: 5px; }
+
+.salto { page-break-before: always; }

@@ -1,0 +1,179 @@
+/* Login admin — mismo lenguaje visual que la landing: cartel de festival, verde bosque + crema + dorado */
+
+:root {
+  --verde-950: #0c1f16;
+  --verde-900: #122b1d;
+  --verde-800: #1c3d28;
+  --verde-600: #2f5c3c;
+  --verde-400: #5f9b71;
+  --crema: #f4efe2;
+  --crema-dim: #d9d0b8;
+  --acento: #c9a227;
+  --serif: 'Fraunces', serif;
+  --mono: 'Space Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 0%, var(--verde-800) 0%, transparent 70%),
+    var(--verde-950);
+  color: var(--crema);
+  font-family: var(--mono);
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a { color: inherit; text-decoration: none; }
+
+.login-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 2rem;
+}
+
+.login-marca {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.login-marca i {
+  color: var(--verde-950);
+  background: var(--acento);
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+  background: var(--crema);
+  border-radius: 16px;
+  border-top: 3px solid var(--acento);
+  box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.4);
+  padding: 2.2rem 2rem 2rem;
+  color: #2a2a24;
+}
+
+.login-card h1 {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 0 0 0.3rem;
+  color: var(--verde-900);
+}
+
+.login-sub {
+  font-size: 0.82rem;
+  color: #6b6a5f;
+  margin: 0 0 1.6rem;
+}
+
+.login-error {
+  background: #3a1414;
+  color: #f0c9c9;
+  border: 1px solid #7a2c2c;
+  border-radius: 6px;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.82rem;
+  margin-bottom: 1.2rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+
+.campo label {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b6a5f;
+}
+
+.input {
+  background: #fff;
+  border: 1px solid rgba(28, 61, 40, 0.15);
+  color: #2a2a24;
+  font-family: var(--mono);
+  font-size: 0.92rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.input:focus {
+  border-color: var(--acento);
+}
+
+.btn-entrar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--verde-800);
+  color: var(--crema);
+  border: none;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.btn-entrar:hover {
+  background: var(--acento);
+  color: var(--verde-950);
+}
+
+.flecha {
+  transition: transform 0.25s ease;
+}
+
+.btn-entrar:hover .flecha {
+  transform: translateX(3px);
+}
+
+.login-volver {
+  font-size: 0.78rem;
+  color: var(--verde-400);
+  transition: color 0.25s ease;
+}
+
+.login-volver:hover {
+  color: var(--acento);
+}

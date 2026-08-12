@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guía de uso - Castings</title>
+  <link rel="stylesheet" href="guia.css">
+</head>
+<body>
+
+<!-- PORTADA -->
+<section class="portada">
+  <div class="etiqueta">GUÍA DE USO</div>
+  <h1>Castings</h1>
+  <div class="sub">Landing pública e inscripciones y panel de administración</div>
+  <div class="pie">Aplicación Castings · Guía general</div>
+</section>
+
+<!-- CABECERA -->
+<div class="cabecera">
+  <span class="titulo">Castings</span>
+</div>
+
+<!-- INTRO -->
+<div class="intro">
+  <h2>¿Para qué sirve esta aplicación?</h2>
+  <p>La aplicación publica los castings abiertos de películas, cortometrajes y otros proyectos, y permite que cualquier persona interesada se inscriba enviando sus datos y su material (fotos y vídeo). El panel de administración concentra la gestión: creación de castings, revisión de cada inscripción y cambio de su estado.</p>
+</div>
+
+<!-- ÍNDICE -->
+<div class="indice">
+  <h2>Contenido de esta guía</h2>
+  <ol>
+    <li>Landing pública: listado de castings abiertos</li>
+    <li>Formulario de inscripción</li>
+    <li>Acceso al panel de administración</li>
+    <li>Panel de administración: resumen general (Dashboard)</li>
+    <li>Gestión de castings</li>
+    <li>Gestión de inscripciones</li>
+    <li>Ficha de una persona inscrita</li>
+    <li>Usuarios administradores</li>
+    <li>Configuración del sitio</li>
+  </ol>
+</div>
+
+<!-- PASO 1 -->
+<div class="paso">
+  <div class="encab"><span class="num">1</span><h3>Landing pública: listado de castings abiertos</h3></div>
+  <p>La página principal muestra únicamente los castings que están en estado <b>abierto</b>. Cada ficha incluye el tipo de proyecto, el título, una breve descripción y la fecha de cierre de la convocatoria. El botón <b>Inscribirme</b> lleva al formulario de ese casting concreto.</p>
+  <img class="captura" src="capturas/landing/01_listado_castings.png" alt="Listado de castings abiertos en la landing">
+  <div class="pie-img">Listado de castings abiertos, con tipo de proyecto, descripción y fecha de cierre</div>
+</div>
+
+<!-- PASO 2 -->
+<div class="paso salto">
+  <div class="encab"><span class="num">2</span><h3>Formulario de inscripción</h3></div>
+  <p>Al pulsar <b>Inscribirme</b> se abre la ficha del casting con el formulario de inscripción. Se solicitan los datos personales (nombre, email y teléfono), la ficha física (fecha de nacimiento, altura y medidas) y el material de presentación (fotos en formato jpg o png, y un vídeo en formato mp4). El botón <b>Enviar inscripción</b> confirma el envío.</p>
+  <img class="captura" src="capturas/landing/02_ficha_inscripcion.png" alt="Cabecera del formulario de inscripción">
+  <div class="pie-img">Cabecera del casting y primeros campos del formulario de inscripción</div>
+</div>
+
+<div class="paso">
+  <p>La parte inferior del formulario recoge la ficha física y permite adjuntar las fotos y el vídeo de presentación antes de enviar la inscripción.</p>
+  <img class="captura" src="capturas/landing/03_formulario_material.png" alt="Campos de ficha física y subida de material">
+  <div class="pie-img">Ficha física y subida de fotos y vídeo de presentación</div>
+</div>
+
+<div class="nota info">Si el email introducido ya existe de una inscripción anterior, sus datos personales se actualizan con los nuevos. Una misma persona no puede inscribirse dos veces al mismo casting con el mismo email.</div>
+
+<!-- PASO 3 -->
+<div class="paso salto">
+  <div class="encab"><span class="num">3</span><h3>Acceso al panel de administración</h3></div>
+  <p>El enlace <b>Acceso equipo</b>, situado en el pie de la landing, lleva a la pantalla de acceso del panel. Se solicitan el usuario y la clave del equipo administrador.</p>
+  <img class="captura" src="capturas/admin/01_login.png" alt="Pantalla de acceso al panel de administración">
+  <div class="pie-img">Pantalla de acceso al panel de administración</div>
+</div>
+
+<!-- PASO 4 -->
+<div class="paso salto">
+  <div class="encab"><span class="num">4</span><h3>Panel de administración: resumen general</h3></div>
+  <p>Tras acceder, el <b>Dashboard</b> muestra un resumen: número de castings abiertos, inscripciones pendientes de revisión e inscripciones totales. Debajo se listan los castings abiertos, las inscripciones pendientes agrupadas por casting, y las últimas inscripciones recibidas, cada una con enlace directo a su ficha.</p>
+  <img class="captura" src="capturas/admin/02_dashboard.png" alt="Dashboard del panel de administración">
+  <div class="pie-img">Resumen general con contadores, castings abiertos y últimas inscripciones</div>
+</div>
+
+<!-- PASO 5 -->
+<div class="paso salto">
+  <div class="encab"><span class="num">5</span><h3>Gestión de castings</h3></div>
+  <p>El apartado <b>Castings</b> lista todos los castings creados, abiertos y cerrados. Incluye un buscador por título o tipo y un filtro por estado. El botón <b>Nuevo casting</b> abre el formulario de alta; el enlace <b>Editar</b> de cada fila abre su ficha.</p>
+  <img class="captura" src="capturas/admin/03_castings_listado.png" alt="Listado de castings con buscador y filtro">
+  <div class="pie-img">Listado de castings con buscador de texto y filtro por estado</div>
+</div>
+
+<div class="paso">
+  <p>El buscador filtra la tabla al escribir, sin recargar la página. El ejemplo siguiente muestra el resultado de buscar por «medianoche».</p>
+  <img class="captura" src="capturas/admin/04_castings_buscador.png" alt="Resultado del buscador de castings">
+  <div class="pie-img">El buscador reduce el listado a los castings que coinciden con el texto</div>
+</div>
+
+<div class="paso salto">
+  <p>La ficha de un casting permite editar sus datos y, en la columna lateral, muestra las personas inscritas en ese casting concreto con su estado actual. El enlace de cada persona lleva directamente a su ficha completa. El botón <b>Eliminar</b>, en la parte inferior, borra el casting tras confirmar la acción.</p>
+  <img class="captura" src="capturas/admin/05_ficha_casting.png" alt="Ficha de edición de un casting con sus inscritos">
+  <div class="pie-img">Ficha de edición del casting, con la lista de personas inscritas junto al formulario</div>
+</div>
+
+<!-- PASO 6 -->
+<div class="paso salto">
+  <div class="encab"><span class="num">6</span><h3>Gestión de inscripciones</h3></div>
+  <p>El apartado <b>Inscripciones</b> lista a las personas inscritas, una fila por persona. La columna <b>Castings</b> indica en cuántos castings distintos está inscrita cada una. El buscador filtra por nombre, email o teléfono; los dos desplegables filtran por casting concreto y por estado. El email de cada fila abre directamente un correo, y el teléfono abre una conversación de WhatsApp.</p>
+  <img class="captura" src="capturas/admin/06_inscripciones_listado.png" alt="Listado de inscripciones con buscador y filtros">
+  <div class="pie-img">Listado de personas inscritas, con buscador y filtros por casting y por estado</div>
+</div>
+
+<!-- PASO 7 -->
+<div class="paso salto">
+  <div class="encab"><span class="num">7</span><h3>Ficha de una persona inscrita</h3></div>
+  <p>La ficha de una persona muestra sus datos (email, teléfono, fecha de nacimiento y edad calculada, altura y medidas) y, en la columna lateral, la lista de castings a los que se ha inscrito con el estado de cada inscripción.</p>
+  <img class="captura" src="capturas/admin/07_ficha_actor.png" alt="Ficha de una persona inscrita">
+  <div class="pie-img">Datos personales y lista de castings a los que está inscrita la persona</div>
+</div>
+
+<div class="paso">
+  <p>Al pulsar sobre uno de los castings de la lista lateral se despliega su detalle: fecha de inscripción, selector de estado con su botón <b>Guardar</b>, y el material adjuntado (fotos y vídeo) para ese casting en concreto.</p>
+  <img class="captura" src="capturas/admin/08_detalle_inscripcion.png" alt="Detalle de una inscripción concreta">
+  <div class="pie-img">Detalle de la inscripción a un casting, con selector de estado y material adjunto</div>
+</div>
+
+<div class="leyenda">
+  <span class="item"><span class="caja" style="background:#e8830c"></span>Pendiente</span>
+  <span class="item"><span class="caja" style="background:#33db84"></span>Aceptado</span>
+  <span class="item"><span class="caja" style="background:#c0392b"></span>Rechazado</span>
+</div>
+
+<!-- PASO 8 -->
+<div class="paso salto">
+  <div class="encab"><span class="num">8</span><h3>Usuarios administradores</h3></div>
+  <p>El apartado <b>Usuarios</b> lista las cuentas con acceso al panel y sus intentos de acceso fallidos. El botón <b>Nuevo usuario</b> da de alta una cuenta adicional; el enlace <b>Editar</b> permite cambiar el nombre de usuario o la clave. No se puede eliminar el único usuario existente ni el usuario con el que se ha iniciado sesión.</p>
+  <img class="captura" src="capturas/admin/09_usuarios.png" alt="Listado de usuarios administradores">
+  <div class="pie-img">Listado de usuarios con acceso al panel de administración</div>
+</div>
+
+<!-- PASO 9 -->
+<div class="paso salto">
+  <div class="encab"><span class="num">9</span><h3>Configuración del sitio</h3></div>
+  <p>El apartado <b>Configuración</b> reúne los datos generales del sitio: nombre, email de contacto y texto del pie de la landing. El botón <b>Guardar</b> aplica los cambios.</p>
+  <img class="captura" src="capturas/admin/10_configuracion.png" alt="Pantalla de configuración del sitio">
+  <div class="pie-img">Datos generales del sitio: nombre, email de contacto y texto de pie</div>
+</div>
+
+<!-- CIERRE -->
+<div class="cierre">
+  <h2>Resumen</h2>
+  <ul>
+    <li>La landing pública muestra solo los castings abiertos y permite inscribirse enviando datos personales y material.</li>
+    <li>Un mismo email identifica siempre a la misma persona; sus datos se actualizan si vuelve a inscribirse.</li>
+    <li>El panel de administración organiza el trabajo en Dashboard, Castings, Inscripciones, Usuarios y Configuración.</li>
+    <li>Cada inscripción tiene un estado propio (pendiente, aceptado o rechazado) que se gestiona desde la ficha de la persona.</li>
+    <li>El email y el teléfono de cada inscrito son accesos directos para contactar por correo o WhatsApp.</li>
+  </ul>
+</div>
+
+</body>
+</html>
